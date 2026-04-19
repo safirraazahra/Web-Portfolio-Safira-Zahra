@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Saya</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Safira Zahra Asshifa</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#prestasi">Achievements</a></li>
+        <li><a href="#organisasi">Organization</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <nav id="hamburger-nav">
+    <div class="logo">Safira Zahra Asshifa</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#tentang" onclick="toggleMenu()">Tentang</a></li>
+        <li><a href="#prestasi" onclick="toggleMenu()">Achievements</a></li>
+        <li><a href="#organisasi" onclick="toggleMenu()">Organization</a></li>
+        <li><a href="#kontak" onclick="toggleMenu()">Kontak</a></li>
+      </div>
+    </div>
+  </nav>
+
+
+  <section id="profile">
+    <div class="section_pic-container">
+      <img src="./assets/foto profil safira.png" alt="Safira Foto Profil" />
+    </div>
+    <div class="section_text">
+      <p class="section_text_p1">Hello, I'am</p>
+      <h1 class="title">Safira Zahra Asshifa</h1>
+      <p class="section_text_p2">Mahasiswa Teknik Komputer Universitas Diponegoro</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/CV-Safira-Zahra-Asshifa.pdf')">Download
+          CV</button>
+        <button class="btn btn-color-1" onclick="location.href='https://wa.me/6289524066166'">Contact Info</button>
+      </div>
+      <div id="social-container">
+        <img src="./assets/linkedin.png" alt="My Linkedin profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/safira-zahra-90b96a376/'" />
+        <img src="./assets/github.png" alt="My github profile" class="icon"
+          onclick="location.href='https://github.com/safirraazahra'" />
+      </div>
+    </div>
+
+    </section>
+    <section id="about">
+       <p class="section__text__p1">Get To Know More</p>
+       <h1 class="titless">About Me</h1>
+        <div class="about-new-container">
+        <div class="about-card">
+            <h2 class="about-card-title">Profil Singkat</h2>
+            <p class="about-card-desc">
+            Mahasiswa Program Studi Teknik Komputer di Universitas Diponegoro yang memiliki minat dalam bidang
+            pemrograman dan pengembangan teknologi. Aktif berpartisipasi
+            dalam berbagai kegiatan organisasi dan kepanitiaan, dengan kemampuan bekerja sama
+            dalam tim, manajemen waktu yang baik, serta komitmen dalam menyelesaikan tugas secara
+            bertanggung jawab. Berorientasi pada pengembangan diri dan peningkatan keterampilan di
+            bidang teknologi serta pengalaman organisasi.
+            </p>
+            <h2 class="about-keahlian">Keahlian</h2>
+            <div class="about-skills-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Desain Grafis</span>
+            <span class="skill-tag">Editing Video</span>
+            </div>
+        </div>
+        <div class="pendidikan-card">
+            <h2 class="pendidikan-title">Pendidikan</h2>
+            <div class="edu-item">
+            <div class="edu-icon edu-icon-school">🏫</div>
+            <div>
+                <h3 class="edu-name">SMAN 7 Semarang</h3>
+                <p class="edu-detail">2021 - 2024</p>
+            </div>
+            </div>
+            <div class="edu-item">
+            <div class="edu-icon edu-icon-univ">🎓</div>
+            <div>
+                <h3 class="edu-name">Universitas Diponegoro</h3>
+                <p class="edu-detail">2024 - Sekarang</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+  <section id="prestasi">
+    <h1 class="prestasi-heading">Achievements</h1>
+    <div class="prestasi-container">
+      <div class="prestasi-card">
+        <div class="prestasi-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>
+        </div>
+        <p class="prestasi-subtitle">TINGKAT NASIONAL | 2023</p>
+        <h3 class="prestasi-title">Juara 2 Lomba Poster SMA</h3>
+        <p class="prestasi-desc">Lomba Poster SMA tingkat nasional dengan karya desain visual yang menonjolkan kreativitas dan membawa nilai budaya indonesia.</p>
+      </div>
+      <div class="prestasi-card middle-card">
+        <div class="prestasi-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15"></path><path d="M11 12 5.12 2.2"></path><path d="m13 12 5.88-9.8"></path><path d="M8 7h8"></path><circle cx="12" cy="17" r="5"></circle><path d="M12 18v-2h-.5"></path></svg>
+        </div>
+        <p class="prestasi-subtitle">TINGKAT FAKULTAS | 2025</p>
+        <h3 class="prestasi-title">Champion Awards FST 2025</h3>
+        <p class="prestasi-desc">Kategori Presentasi Terbaik. Menunjukkan kemampuan komunikasi dan public speaking.</p>
+      </div>
+      <div class="prestasi-card">
+        <div class="prestasi-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+        </div>
+        <p class="prestasi-subtitle">TINGKAT SEKOLAH | 2023</p>
+        <h3 class="prestasi-title">Juara 3 Lomba Komik</h3>
+        <p class="prestasi-desc">Lomba Komik di SMAN 7 Semarang dengan karya desain digital yang menonjolkan kreativitas visual dan ilustrasi.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="organisasi">
+    <h1 class="titles" style="text-align: center; margin-bottom: 3rem; font-size: 2rem; font-weight: 700; color: #1a1a1a;">Organization & Activities</h1>
+    
+    <div class="org-container">
+      <div class="org-card">
+        <div class="org-header">
+          <div class="org-title-group">
+            <h3 class="org-role">Staff Muda Bidang Technopreneurship</h3>
+            <p class="org-name">Forum Studi Teknik (FST) UNDIP</p>
+          </div>
+          <span class="org-year">2025 – 2026</span>
+        </div>
+        <ul class="org-list">
+          <li>Sekretaris dalam program kerja Company Visit.</li>
+          <li>Wakil Koordinator dalam Business Plan Competition.</li>
+        </ul>
+      </div>
+
+      <div class="org-card">
+        <div class="org-header">
+          <div class="org-title-group">
+            <h3 class="org-role">Wakil Ketua Bidang Ekobis</h3>
+            <p class="org-name">Himpunan Mahasiswa Teknik Komputer (HIMASKOM) UNDIP</p>
+          </div>
+          <span class="org-year">2025 – Sekarang</span>
+        </div>
+        <ul class="org-list">
+          <li>Membantu dalam pengawasan dan evaluasi program kerja..</li>
+          <li>Membantu pengawasan dan evaluasi program kerja internal.</li>
+        </ul>
+      </div>
+
+      <div class="org-card">
+        <div class="org-header">
+          <div class="org-title-group">
+            <h3 class="org-role">Wakil Ketua Bidang HRD</h3>
+            <p class="org-name">Karang Taruna RW</p>
+          </div>
+          <span class="org-year">2024 – 2025</span>
+        </div>
+        <ul class="org-desc-italic">
+          <li>Memastikan program kerja terlaksana dengan baik.</li>
+          <li>Mengatur koordinasi internal dan kesejahteraan anggota.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:safirraazahra@gmail.com">safirraazahra@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/safira-zahra-90b96a376/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#prestasi">Achievements</a></li>
+            <li><a href="#organisasi">Organization</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright ; 2026 Safira Zahra. All Rights Reserved.</p>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

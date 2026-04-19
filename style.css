@@ -1,0 +1,718 @@
+/*General*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/*Transition*/
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/*Desktop*/
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: #FF816F;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: #FF816F;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo.hover {
+  cursor: default;
+}
+
+/*hamburger menu*/
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+/*section*/
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/*profile section*/
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section_pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section_text {
+  align-self: center;
+  text-align: center;
+}
+
+.section_text p {
+  font-weight: 600;
+}
+
+.section_text_p1 {
+  text-align: center;
+}
+
+.section_text_p2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  color: #5E75E3;
+}
+
+#social-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/*ICON*/
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/*BUTTON*/
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1 {
+  border: #FF816F solid;
+}
+
+.btn-color-2 {
+  border: #5E75E3 0.1rem solid;
+  color: #5E75E3;
+}
+
+
+.btn-color-1,
+.btn-color-2 {
+  cursor: pointer;
+}
+
+.btn-color-1{
+  background: #FF816F;
+  color: white;
+}
+
+.btn-color-2:hover {
+  color: white;
+  border: #5E75E3;
+  background: #5E75E3;
+  border: #5E75E3 0.1rem solid;
+}
+
+
+.btn-color-1:hover {
+  background: #E07B69;
+  border:#E07B69;
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+
+
+.btn-container {
+  gap: 1rem;
+}
+
+/*About Section*/
+
+#about {
+  position: relative;
+  height: fit-content;
+  min-height: auto;
+  padding-bottom: 4rem;
+}
+
+/* New two-column card layout */
+.section__text__p1{
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(85, 85, 85);
+}
+
+.titless {
+  font-size: 3rem;
+  text-align: center;
+  color: black;
+}
+
+
+.about-new-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: flex-start;
+}
+
+.about-card {
+  background: #5E75E3;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  flex: 1;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+}
+
+.about-card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.8rem;
+}
+
+.about-keahlian {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.8rem;
+}
+
+.pendidikan-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+}
+
+.about-card-desc {
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: white;
+  margin-bottom: 1.2rem;
+}
+
+.about-skills-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.about-skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background: #FF816F;
+  border: 1px solid #FF816F;
+  border-radius: 2rem;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.85rem;
+  color: white;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.skill-tag:hover {
+  background: white;
+  color: #FF816F;
+  border-color: #FF816F;
+}
+
+/* Pendidikan card */
+.pendidikan-card {
+  min-width: 260px;
+  max-width: 340px;
+  flex: 0 0 auto;
+}
+
+.edu-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.edu-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.edu-icon-school {
+  background: #fff3e8;
+}
+
+.edu-icon-univ {
+  background: #e8f1ff;
+}
+
+.edu-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.15rem;
+}
+
+.edu-detail {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* Keep legacy classes for other sections */
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-containers {
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-containers,
+.about-details-containers {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.details-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.details-container p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section_pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+
+
+
+/* PRESTASI SECTION */
+#prestasi {
+  background-color: white;
+  margin: 4vh 0 0 0;
+  padding: 6vh 10rem 10vh 10rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: auto;
+  height: auto;
+}
+
+.prestasi-card:hover .prestasi-subtitle,
+.prestasi-card:hover .prestasi-title,
+.prestasi-card:hover .prestasi-desc {
+    color: white;
+}
+
+.prestasi-heading {
+  color: #1a1a1a;
+  align-items: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.prestasi-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.prestasi-card {
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid #FF816F;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.prestasi-card:hover {
+  transform: translateY(-5px);
+  background-color: #FF816F;
+  border-color: #FF816F;
+  color: white;
+}
+
+.prestasi-card.middle-card {
+  border-color: #FF816F;
+}
+
+.prestasi-icon {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.prestasi-subtitle {
+  color: #FF816F;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+
+
+.prestasi-title {
+  color: #1a1a1a;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.prestasi-desc {
+  color: #525964;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+/* ORG SECTION */
+#organisasi {
+  margin: 4vh 0 0 0;
+  padding: 6vh 10rem 10vh 10rem;
+  flex-direction: column;
+  align-items: center;
+  min-height: auto;
+  height: auto;
+}
+
+.org-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+.org-card {
+  background: #5E75E3;
+  border: 1px solid #eef0f3;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.org-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.org-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+}
+
+.org-role {
+  font-size: 1.3rem;
+  color: white;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.org-name {
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+}
+
+.org-year {
+  background: #FF816F;
+  color: white;
+  font-size: 0.85em;
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.org-list {
+  padding-left: 1.5rem;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.org-list li {
+  margin-bottom: 0.5rem;
+}
+
+.org-desc-italic {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.8;
+  padding-left: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .org-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
