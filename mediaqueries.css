@@ -1,8 +1,158 @@
- @media screen and (max-width: 1200px){
-    #desktop-nav{
+/* TABLET */
+@media screen and (max-width: 992px) {
+
+    #profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section_pic-container {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-new-container {
+        flex-direction: column;
+    }
+
+    .prestasi-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 600px) {
+
+    /* NAV */
+    #desktop-nav {
         display: none;
+        padding: 0%;
     }
-    #hamburger-nav{
+
+    .logo{
+        font-size: 1rem;
+    }
+
+
+    #hamburger-nav {
         display: flex;
+        justify-content: space-between;
+        padding: 1rem;
     }
- }
+
+    /* PROFILE */
+    #profile {
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: center;
+    }
+
+    .section_pic-container {
+        width: 350px;
+        height: 180px;
+        justify-content: center;
+        
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .section_text_p2 {
+        font-size: 0.9rem;
+    }
+
+    /* BUTTON */
+    .btn-container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .btn {
+        width: 80%;
+    }
+
+    /* ABOUT */
+    .about-new-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    /* PRESTASI */
+    .prestasi-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* CONTACT */
+    .contact-info-upper-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+
+    footer {
+        display: flex;
+        justify-content: center;
+        /* ⬅️ center semua isi */
+        align-items: center;
+        flex-direction: column;
+        font-size: ;
+    }
+
+    footer .nav-links {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        /* ⬅️ auto biar ga maksa kiri */
+        justify-content: center;
+        /* ⬅️ INI KUNCI */
+        gap: 0.8rem 1.5rem;
+        /* jarak rapi */
+        width: fit-content;
+        /* ⬅️ biar ga full kiri */
+        margin: 0 auto;
+        /* ⬅️ center horizontal */
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    footer .nav-links li {
+        text-align: center;
+    }
+
+    .title{
+        font-size: 2rems;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    section {
+        padding: 2rem 1rem;
+        margin: 0;
+        width: 100%;
+    }
+
+    #prestasi,
+    #organisasi {
+        padding: 2rem 1rem;
+    }
+
+    .about-new-container {
+        width: 100%;
+    }
+
+    .org-container,
+    .prestasi-container {
+        width: 100%;
+    }
+
+}
+
